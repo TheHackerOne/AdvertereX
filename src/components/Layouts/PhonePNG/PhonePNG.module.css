@@ -1,0 +1,164 @@
+.phone_outer {
+	height: 100vh;
+	width: 100vw;
+	background-color: whitesmoke;
+}
+
+.phone_inner {
+	height: inherit;
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: 1;
+	grid-template-columns: 1fr 2fr;
+}
+
+.phoneImg {
+	height: 100vh;
+	/* border: 1px solid red; */
+  display: flex;
+  margin-top: 2rem;
+	position: relative;
+}
+
+.phone_inner_img img {
+	position: absolute;
+	margin: auto;
+	left: 7rem;
+	top: 1.6rem;
+	width: 25rem;
+	height: 52rem;
+}
+
+.phone_outer_img img {
+	margin: auto;
+	position: absolute;
+	width: 38rem;
+	height: auto;
+}
+
+.phoneText {
+	/* border: 1px solid red; */
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.phoneText button {
+	padding: 2rem 4rem;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #7f5af0;
+	border: 3px solid #7f5af0;
+	border-radius: 10px;
+	width: 20rem;
+	margin: 5rem 0;
+}
+
+.phoneText h1 {
+	margin-left: auto;
+	color: #7f5af0;
+	font-size: 6rem;
+}
+
+.phoneText button:hover {
+	cursor: pointer;
+}
+
+.phoneText button:focus {
+	outline: none;
+}
+
+@media (max-width: 980px) {
+	.phone_outer {
+    height: 100vh;
+		background-color: whitesmoke;
+		margin-top: 20vh;
+	}
+
+	.phone_inner {
+    height: inherit;
+		display: grid;
+		grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+	}
+
+	.phoneImg {
+		/* border: 1px solid red; */
+    height: 100vh;
+    width: 40vw;
+    /* transform: translateX(20%); */
+  }
+
+	.phone_inner_img img {
+		transform: scale(0.8);
+		z-index: 1;
+	}
+
+	.phone_outer_img img {
+		transform: scale(0.8);
+		width: 38rem;
+		position: absolute;
+		height: auto;
+		z-index: 2;
+	}
+
+	.phoneText {
+		/* border: 1px solid black; */
+    height: 100vh;
+  }
+  
+  .phoneText button{
+    transform: scale(0.7);
+    margin-left: -3rem;
+  }
+
+	.phoneText h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 800px){
+  .phone_outer {
+    height: 140vh;
+		background-color: whitesmoke;
+    margin-top: 20vh;
+	}
+  
+	.phone_inner {
+    /* border: 1px solid red; */
+    height: inherit;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .phoneImg{
+    transform: translateX(-4rem);
+    display: flex;
+    margin: auto;
+  }
+  
+  .phoneText{
+    /* border: 1px solid red; */
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .phoneText h1{
+    text-align: center;
+    width: 100%;
+  }
+  .phoneText button{
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.list_container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+
+.list_item{
+  margin: 3rem 1rem;
+  border: 1px solid white;
+  padding: 0rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.list_item a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.3rem;
+}
+
+

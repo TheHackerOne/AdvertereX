@@ -1,0 +1,27 @@
+.blog{
+  background: grey;
+  height: 30rem;
+  min-width: 24rem ;
+  border-radius: 2rem;
+  margin: 12rem 3rem;
+  /* border: 1px solid red; */
+}
+
+.blog__text{
+  padding: 2rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: 60%;
+  margin-top: 10rem;
+  justify-content: space-around;
+}
+
+.blog__text h2{
+  font-size: 1.6rem;
+}
+
+.blog__text p {
+  font-size: 1.3rem;
+}
